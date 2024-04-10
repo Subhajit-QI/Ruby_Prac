@@ -5,7 +5,9 @@ class ExampleClass
       @contact = contact
       @email = email    
     end
-    puts 
+   def sett=(name)
+     @name = name 
+   end
     def details
       puts "my name is #{@name}"
       puts @title
@@ -24,8 +26,9 @@ end
 
 yt = ExampleClass.new("subhajit", "paul", "xyz@gamil.com", 9832104751)
 
-yt.details
 
+yt.sett = "riya"
+yt.details
 yt.print_hello
 
 ExampleClass.class_method
